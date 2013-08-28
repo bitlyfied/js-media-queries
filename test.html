@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Media Queries</title>
+
+        <link rel="stylesheet" href="stylesheets/all.css">
+
+        <script>
+            var isMobile = screen.width < 641;
+            document.writeln('<link rel="stylesheet" href="stylesheets/'+(isMobile?'mobile':'desktop')+'.css">');
+        </script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p class="red-for-all">This should be red on both</p>
+        <p class="red-for-desktop">This should be red on desktop only</p>
+        <p class="red-for-mobile">This should be red on mobile only</p>
+    </body>
+</html>
